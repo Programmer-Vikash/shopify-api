@@ -57,21 +57,8 @@ app.get('/check', async (req, res) => {
 
     await doc.updateProperties({ title: 'Pengolin Order Data' });
     const sheet = doc.sheetsByIndex[0];
-    const getRows = await sheet.getRows();
-  
-    let newData
-    for (let i = 0; i < getRows.length; i++) {
-        if ((getRows[i].ID == jsonToCsv[i].ID) && (getRows[i]['Item SKU'] == jsonToCsv[i]['Item SKU'])) {
-            getRows[i] = jsonToCsv[i];
-            let tempRow = getRows[i]
-            await tempRow.save();
-
-        } else {
-            newData = jsonToCsv[i]
-        }
-    }
-
-
+    
+    
     const HEADERS = ["ID",
         "Order Time (DD/MMM/YYYY)",
         "Customer Name",
@@ -93,6 +80,25 @@ app.get('/check', async (req, res) => {
         "Remarks (Reason for cancellation/ delay)"
     ]
     await sheet.setHeaderRow(HEADERS);
+    
+    
+    const getRows = await sheet.getRows();
+  
+    let newData=[]
+    for (let i = 0; i < getRows.length; i++) {
+        for(let j=0;j<jsonToCsv.length;j++){
+        if ((getRows[i].ID == jsonToCsv[j].ID) && (getRows[i]['Item SKU'] == jsonToCsv[j]['Item SKU'])) {
+            getRows[i]["Payment Status"] = jsonToCsv[j]["Payment Status"];
+            // console.log(getRows[i])
+            let tempRow = getRows[i]
+            await tempRow.save();
+
+        } else {
+            newData.push(jsonToCsv[j]) 
+        }
+    }
+}
+    console.log(newData)
     await sheet.addRows(newData)
 
 
