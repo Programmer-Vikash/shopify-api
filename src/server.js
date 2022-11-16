@@ -4,7 +4,7 @@ let axios = require("axios")
 const app = express();
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const creds = require('../secret/pengolin-0c25464fd62e.json')
-
+const _ = require('lodash');
 
 
 let options = {
@@ -85,21 +85,47 @@ app.get('/check', async (req, res) => {
     const getRows = await sheet.getRows();
   
     let newData=[]
-    for (let i = 0; i < getRows.length; i++) {
-        for(let j=0;j<jsonToCsv.length;j++){
-        if ((getRows[i].ID == jsonToCsv[j].ID) && (getRows[i]['Item SKU'] == jsonToCsv[j]['Item SKU'])) {
-            getRows[i]["Payment Status"] = jsonToCsv[j]["Payment Status"];
-            // console.log(getRows[i])
-            let tempRow = getRows[i]
-            await tempRow.save();
 
+
+
+    // Google spreadsheet rows
+    let spreadsheetRows = [];
+    let alreadyExists = [];
+    console.log( getRows.length );
+    if(getRows.length > 0){
+    for (let i = 0; i < getRows.length; i++) {
+        let obj = {
+            'ID': getRows[i].ID,
+            'Item SKU': getRows[i]['Item SKU']
+        };
+
+        spreadsheetRows.push(obj);
+
+        let findInCsv = _.find( jsonToCsv,  obj );
+        if ( findInCsv ) {
+            // this means we already found it
+            alreadyExists[findInCsv];
+
+            // Now update it accordingly
+            getRows[i]["Payment Status"] = findInCsv["Payment Status"];
+
+            // save the data
+            await getRows[i].save();
+
+            console.log('Found in CSV: ', findInCsv);
+            
         } else {
-            newData.push(jsonToCsv[j]) 
+            // not found
+            newData.push(jsonToCsv[i]);
         }
     }
+}else{
+    await sheet.addRows(jsonToCsv)
 }
+
     console.log(newData)
     await sheet.addRows(newData)
+
 
 
     let status = {
