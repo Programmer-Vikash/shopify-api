@@ -34,7 +34,10 @@ const prettyDate = $date => {
 };
 
 
-app.get('/check', async (req, res) => {
+// app.get('/check', async (req, res) => {
+    setInterval(async()=>{
+
+   
 
     let removedRows = [];
 
@@ -199,7 +202,7 @@ app.get('/check', async (req, res) => {
 
 
 
-    return res.send(status)
+    return status
 })
 
 
