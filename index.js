@@ -3,7 +3,7 @@ const express = require("express")
 let axios = require("axios")
 const app = express();
 const { GoogleSpreadsheet } = require('google-spreadsheet');
-const creds = require('../secret/pengolin-0c25464fd62e.json')
+const creds = require('./secret/pengolin-0c25464fd62e.json')
 const _ = require('lodash');
 const dayjs = require( 'dayjs' );
 
