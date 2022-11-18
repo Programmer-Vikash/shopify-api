@@ -36,8 +36,10 @@ const prettyDate = $date => {
 
 app.get('/', async (req, res) => {
   
-
+let tsw = req.query.tsw
+console.log(tsw,process.env.SECRET_VALUE)
    
+if(tsw == process.env.SECRET_VALUE){
 
     let removedRows = [];
 
@@ -203,6 +205,11 @@ app.get('/', async (req, res) => {
 
 
     return res.send(status)
+
+}else{
+
+    return res.send({status : "secret value not match"})
+}
     // return status
 })
 
