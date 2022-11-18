@@ -204,7 +204,7 @@ const prettyDate = $date => {
 
     // return res.send(status)
     return status
-},3000)
+},30000)
 
 
 
