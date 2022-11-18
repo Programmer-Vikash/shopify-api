@@ -6,6 +6,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const creds = require('./secret/pengolin-0c25464fd62e.json')
 const _ = require('lodash');
 const dayjs = require('dayjs');
+const getSymbolFromCurrency = require('currency-symbol-map');
 
 // load plugins
 var customParseFormat = require('dayjs/plugin/customParseFormat');
@@ -30,7 +31,7 @@ let options = {
 
 
 const prettyDate = $date => {
-    return dayjs($date).format('DD-MMM-YYYY');
+    return dayjs($date).format('DD MMM YYYY');
 };
 
 
@@ -60,7 +61,7 @@ app.get('/', async (req, res) => {
                             "Customer Name": item.customer.default_address.name,
                             "Customer Email": item.customer.email,
                             "Currency": item.customer.currency,
-                            "Price": item.line_items[i].price,
+                            "Price": getSymbolFromCurrency(item.customer.currency) +""+ item.line_items[i].price  ,
                             "Quantity": item.line_items[i].quantity,
                             "Item Name": item.line_items[i].title,
                             "Item SKU": item.line_items[i].sku,
@@ -71,7 +72,7 @@ app.get('/', async (req, res) => {
                             "City": item.customer.default_address.city,
                             "Fullfiment Date": (item.fulfillments.length == 0) ? null : prettyDate(item.fulfillments[0].created_at),
                             "Delivery Type": (item.fulfillments.length == 0) ? null : item.fulfillments[0].tracking_company,
-                            "Delivered Date": (item.fulfillments.length == 0) ? null : prettyDate(item.fulfillments[0].updated_at),
+                            "Delivered Date": (item.fulfillments.length == 0) ? null : (item.fulfillments[0].shipment_status == "delivered")? prettyDate(item.fulfillments[0].updated_at) : null,
                             "Fullfiment QTY": item.line_items[i].fulfillable_quantity,
                             "Remarks (Reason for cancellation/ delay)  ": item.cancel_reason,
                             "Transaction Type": item.gateway,
