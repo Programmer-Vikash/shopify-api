@@ -26151,3 +26151,1020 @@
         ]
     }
 ]
+
+"JSONdata": [
+    {
+      "id": 4718847688857,
+      "admin_graphql_api_id": "gid://shopify/Order/4718847688857",
+      "app_id": 580111,
+      "browser_ip": "106.202.79.247",
+      "buyer_accepts_marketing": true,
+      "cancel_reason": null,
+      "cancelled_at": null,
+      "cart_token": "9123ea84d18483b63e41e47ddbe6198d",
+      "checkout_id": 25848951013529,
+      "checkout_token": "27f7e4c5ef0a77c84971f89c14297617",
+      "client_details": {
+        "accept_language": "en-IN",
+        "browser_height": null,
+        "browser_ip": "106.202.79.247",
+        "browser_width": null,
+        "session_hash": null,
+        "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 261.0.0.18.106 (iPhone14,7; iOS 16_0_3; en_IN; en-IN; scale=3.00; 1170x2532; 418330231)"
+      },
+      "closed_at": null,
+      "confirmed": true,
+      "contact_email": "deepakbinyani@yahoo.com",
+      "created_at": "2022-11-18T17:28:59+05:30",
+      "currency": "INR",
+      "current_subtotal_price": "5996.00",
+      "current_subtotal_price_set": {
+        "shop_money": {
+          "amount": "5996.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "5996.00",
+          "currency_code": "INR"
+        }
+      },
+      "current_total_discounts": "2998.00",
+      "current_total_discounts_set": {
+        "shop_money": {
+          "amount": "2998.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "2998.00",
+          "currency_code": "INR"
+        }
+      },
+      "current_total_duties_set": null,
+      "current_total_price": "5996.00",
+      "current_total_price_set": {
+        "shop_money": {
+          "amount": "5996.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "5996.00",
+          "currency_code": "INR"
+        }
+      },
+      "current_total_tax": "0.00",
+      "current_total_tax_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        }
+      },
+      "customer_locale": "en-IN",
+      "device_id": null,
+      "discount_codes": [],
+      "email": "deepakbinyani@yahoo.com",
+      "estimated_taxes": false,
+      "financial_status": "pending",
+      "fulfillment_status": null,
+      "gateway": "Cash on Delivery (COD)",
+      "landing_site": "/collections/men-co-ord-sets?utm_source=facebook&utm_medium=ig Instagram_Feed&utm_campaign=DPA_Acq_Men_18-50_Co-Ord&utm_content=Premium_Liquor_Engaged_Shopper&ad name=b2g1_frame1_abhishek_intro_card – Copy&fbc_id=23852129403560508&h_ad_id=23852129752250508&fbclid=PAAabgEV8p5X05jkgLK9F6fY4Tow0TG2CYNkvIA7BszdrxV8xwBaEEGghGu5A_aem_AdSa_qmn23Wr26bE_AVzvoPPpIxEp0F3ga16XeD0QuPV5V-z7cxxn40rNHWtOblVrB5n3qk1eCbq1oiV9dveXGoIVmsLW5imsXhEnel46EPw0Ya68xXs9l3RwGL4xWPrZdmD1lihdE7lNFszFyisSK1H",
+      "landing_site_ref": null,
+      "location_id": null,
+      "merchant_of_record_app_id": null,
+      "name": "228096",
+      "note": null,
+      "note_attributes": [],
+      "number": 27096,
+      "order_number": 28096,
+      "order_status_url": "https://www.lovepangolin.com/40902099097/orders/bca9e28be8f7f31cbe71d16a3ff6afcc/authenticate?key=8743b9c2f16ec6e9b169865a7f640532",
+      "original_total_duties_set": null,
+      "payment_gateway_names": [
+        "Cash on Delivery (COD)"
+      ],
+      "phone": null,
+      "presentment_currency": "INR",
+      "processed_at": "2022-11-18T17:28:58+05:30",
+      "processing_method": "manual",
+      "reference": "eec7c04eb5e39cd07efb0ec859771386",
+      "referring_site": "",
+      "source_identifier": "eec7c04eb5e39cd07efb0ec859771386",
+      "source_name": "web",
+      "source_url": null,
+      "subtotal_price": "5996.00",
+      "subtotal_price_set": {
+        "shop_money": {
+          "amount": "5996.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "5996.00",
+          "currency_code": "INR"
+        }
+      },
+      "tags": "COD Confirmed",
+      "tax_lines": [],
+      "taxes_included": true,
+      "test": false,
+      "token": "bca9e28be8f7f31cbe71d16a3ff6afcc",
+      "total_discounts": "2998.00",
+      "total_discounts_set": {
+        "shop_money": {
+          "amount": "2998.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "2998.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_line_items_price": "8994.00",
+      "total_line_items_price_set": {
+        "shop_money": {
+          "amount": "8994.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "8994.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_outstanding": "5996.00",
+      "total_price": "5996.00",
+      "total_price_set": {
+        "shop_money": {
+          "amount": "5996.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "5996.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_shipping_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_tax": "0.00",
+      "total_tax_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_tip_received": "0.00",
+      "total_weight": 0,
+      "updated_at": "2022-11-18T17:31:33+05:30",
+      "user_id": null,
+      "billing_address": {
+        "first_name": "Deepak",
+        "address1": "N-183 second floor panshcheel park",
+        "phone": "98111 99481",
+        "city": "New delhi",
+        "zip": "110017",
+        "province": "Delhi",
+        "country": "India",
+        "last_name": "Binyani",
+        "address2": null,
+        "company": null,
+        "latitude": null,
+        "longitude": null,
+        "name": "Deepak Binyani",
+        "country_code": "IN",
+        "province_code": "DL"
+      },
+      "customer": {
+        "id": 6328684216473,
+        "email": "deepakbinyani@yahoo.com",
+        "accepts_marketing": true,
+        "created_at": "2022-11-18T08:55:52+05:30",
+        "updated_at": "2022-11-18T17:29:00+05:30",
+        "first_name": "Deepak",
+        "last_name": "Binyani",
+        "state": "disabled",
+        "note": null,
+        "verified_email": true,
+        "multipass_identifier": null,
+        "tax_exempt": false,
+        "tags": "Wheelio App",
+        "currency": "INR",
+        "phone": null,
+        "accepts_marketing_updated_at": "2022-11-18T08:55:52+05:30",
+        "marketing_opt_in_level": "single_opt_in",
+        "tax_exemptions": [],
+        "email_marketing_consent": {
+          "state": "subscribed",
+          "opt_in_level": "single_opt_in",
+          "consent_updated_at": "2022-11-18T08:55:52+05:30"
+        },
+        "sms_marketing_consent": null,
+        "admin_graphql_api_id": "gid://shopify/Customer/6328684216473",
+        "default_address": {
+          "id": 7794190844057,
+          "customer_id": 6328684216473,
+          "first_name": "Deepak",
+          "last_name": "Binyani",
+          "company": null,
+          "address1": "N-183 second floor panshcheel park",
+          "address2": null,
+          "city": "New delhi",
+          "province": "Delhi",
+          "country": "India",
+          "zip": "110017",
+          "phone": "98111 99481",
+          "name": "Deepak Binyani",
+          "province_code": "DL",
+          "country_code": "IN",
+          "country_name": "India",
+          "default": true
+        }
+      },
+      "discount_applications": [
+        {
+          "target_type": "line_item",
+          "type": "automatic",
+          "value": "100.0",
+          "value_type": "percentage",
+          "allocation_method": "each",
+          "target_selection": "entitled",
+          "title": "Buy 2 Get 1 Free"
+        }
+      ],
+      "fulfillments": [],
+      "line_items": [
+        {
+          "id": 11967842517145,
+          "admin_graphql_api_id": "gid://shopify/LineItem/11967842517145",
+          "fulfillable_quantity": 1,
+          "fulfillment_service": "manual",
+          "fulfillment_status": null,
+          "gift_card": false,
+          "grams": 0,
+          "name": "Havana Hoodie Co-ord - S / Whale Blue",
+          "price": "2998.00",
+          "price_set": {
+            "shop_money": {
+              "amount": "2998.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "2998.00",
+              "currency_code": "INR"
+            }
+          },
+          "product_exists": true,
+          "product_id": 7301598314649,
+          "properties": [
+            {
+              "name": "Monogram",
+              "value": ""
+            }
+          ],
+          "quantity": 1,
+          "requires_shipping": true,
+          "sku": "CH-HV-Navy-PAHD-NCT-NPP-NLN-ML-S-100",
+          "taxable": false,
+          "title": "Havana Hoodie Co-ord",
+          "total_discount": "2998.00",
+          "total_discount_set": {
+            "shop_money": {
+              "amount": "2998.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "2998.00",
+              "currency_code": "INR"
+            }
+          },
+          "variant_id": 41936396910745,
+          "variant_inventory_management": "shopify",
+          "variant_title": "S / Whale Blue",
+          "vendor": "Pangolin",
+          "tax_lines": [],
+          "duties": [],
+          "discount_allocations": [
+            {
+              "amount": "2998.00",
+              "amount_set": {
+                "shop_money": {
+                  "amount": "2998.00",
+                  "currency_code": "INR"
+                },
+                "presentment_money": {
+                  "amount": "2998.00",
+                  "currency_code": "INR"
+                }
+              },
+              "discount_application_index": 0
+            }
+          ]
+        },
+        {
+          "id": 11967842549913,
+          "admin_graphql_api_id": "gid://shopify/LineItem/11967842549913",
+          "fulfillable_quantity": 1,
+          "fulfillment_service": "manual",
+          "fulfillment_status": null,
+          "gift_card": false,
+          "grams": 0,
+          "name": "Havana Hoodie Co-ord - L / Whale Blue",
+          "price": "2998.00",
+          "price_set": {
+            "shop_money": {
+              "amount": "2998.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "2998.00",
+              "currency_code": "INR"
+            }
+          },
+          "product_exists": true,
+          "product_id": 7301598314649,
+          "properties": [
+            {
+              "name": "Monogram",
+              "value": ""
+            }
+          ],
+          "quantity": 1,
+          "requires_shipping": true,
+          "sku": "CH-HV-Navy-PAHD-NCT-NPP-NLN-ML-L-100",
+          "taxable": false,
+          "title": "Havana Hoodie Co-ord",
+          "total_discount": "0.00",
+          "total_discount_set": {
+            "shop_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            }
+          },
+          "variant_id": 41936396976281,
+          "variant_inventory_management": "shopify",
+          "variant_title": "L / Whale Blue",
+          "vendor": "Pangolin",
+          "tax_lines": [],
+          "duties": [],
+          "discount_allocations": [
+            {
+              "amount": "0.00",
+              "amount_set": {
+                "shop_money": {
+                  "amount": "0.00",
+                  "currency_code": "INR"
+                },
+                "presentment_money": {
+                  "amount": "0.00",
+                  "currency_code": "INR"
+                }
+              },
+              "discount_application_index": 0
+            }
+          ]
+        },
+        {
+          "id": 11967842582681,
+          "admin_graphql_api_id": "gid://shopify/LineItem/11967842582681",
+          "fulfillable_quantity": 1,
+          "fulfillment_service": "manual",
+          "fulfillment_status": null,
+          "gift_card": false,
+          "grams": 0,
+          "name": "Napoli  Hoodie Co-ord - L / Whale Blue",
+          "price": "2998.00",
+          "price_set": {
+            "shop_money": {
+              "amount": "2998.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "2998.00",
+              "currency_code": "INR"
+            }
+          },
+          "product_exists": true,
+          "product_id": 7494481477785,
+          "properties": [
+            {
+              "name": "Monogram",
+              "value": ""
+            }
+          ],
+          "quantity": 1,
+          "requires_shipping": true,
+          "sku": "CH-NP-Navy Blue-PAHD-NCT-NPP-NLN-FM-L-101",
+          "taxable": false,
+          "title": "Napoli  Hoodie Co-ord",
+          "total_discount": "0.00",
+          "total_discount_set": {
+            "shop_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            }
+          },
+          "variant_id": 42501952307353,
+          "variant_inventory_management": "shopify",
+          "variant_title": "L / Whale Blue",
+          "vendor": "Pangolin",
+          "tax_lines": [],
+          "duties": [],
+          "discount_allocations": [
+            {
+              "amount": "0.00",
+              "amount_set": {
+                "shop_money": {
+                  "amount": "0.00",
+                  "currency_code": "INR"
+                },
+                "presentment_money": {
+                  "amount": "0.00",
+                  "currency_code": "INR"
+                }
+              },
+              "discount_application_index": 0
+            }
+          ]
+        }
+      ],
+      "payment_terms": null,
+      "refunds": [],
+      "shipping_address": {
+        "first_name": "Deepak",
+        "address1": "N-183 second floor panshcheel park",
+        "phone": "98111 99481",
+        "city": "New delhi",
+        "zip": "110017",
+        "province": "Delhi",
+        "country": "India",
+        "last_name": "Binyani",
+        "address2": null,
+        "company": null,
+        "latitude": null,
+        "longitude": null,
+        "name": "Deepak Binyani",
+        "country_code": "IN",
+        "province_code": "DL"
+      },
+      "shipping_lines": [
+        {
+          "id": 3914421960857,
+          "carrier_identifier": "650f1a14fa979ec5c74d063e968411d4",
+          "code": "advanced_cash_on_delivery_0",
+          "delivery_category": null,
+          "discounted_price": "0.00",
+          "discounted_price_set": {
+            "shop_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            }
+          },
+          "phone": null,
+          "price": "0.00",
+          "price_set": {
+            "shop_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            }
+          },
+          "requested_fulfillment_service_id": null,
+          "source": "Cash on Delivery app",
+          "title": "Free Shipping (Cash on Delivery)",
+          "tax_lines": [],
+          "discount_allocations": []
+        }
+      ]
+    },
+    {
+      "id": 4715161190553,
+      "admin_graphql_api_id": "gid://shopify/Order/4715161190553",
+      "app_id": 580111,
+      "browser_ip": "49.43.101.252",
+      "buyer_accepts_marketing": true,
+      "cancel_reason": null,
+      "cancelled_at": null,
+      "cart_token": "eafd5ca44a7d6947d9638be8f5fa41db",
+      "checkout_id": 25829083644057,
+      "checkout_token": "5d221d46f142d11261ec043d0ae32eb8",
+      "client_details": {
+        "accept_language": "en-IN",
+        "browser_height": null,
+        "browser_ip": "49.43.101.252",
+        "browser_width": null,
+        "session_hash": null,
+        "user_agent": "Mozilla/5.0 (Linux; Android 12; SM-G973F Build/SP1A.210812.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36 Instagram 260.0.0.23.115 Android (31/12; 420dpi; 1080x2168; samsung; SM-G973F; beyond1; exynos9820; en_GB; 416690770)"
+      },
+      "closed_at": null,
+      "confirmed": true,
+      "contact_email": "karan.sidhu90.ks@gmail.com",
+      "created_at": "2022-11-16T07:59:07+05:30",
+      "currency": "INR",
+      "current_subtotal_price": "2199.00",
+      "current_subtotal_price_set": {
+        "shop_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        }
+      },
+      "current_total_discounts": "0.00",
+      "current_total_discounts_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        }
+      },
+      "current_total_duties_set": null,
+      "current_total_price": "2199.00",
+      "current_total_price_set": {
+        "shop_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        }
+      },
+      "current_total_tax": "0.00",
+      "current_total_tax_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        }
+      },
+      "customer_locale": "en-IN",
+      "device_id": null,
+      "discount_codes": [],
+      "email": "karan.sidhu90.ks@gmail.com",
+      "estimated_taxes": false,
+      "financial_status": "paid",
+      "fulfillment_status": "partial",
+      "gateway": "Razorpay Secure",
+      "landing_site": "/products/napoli-hoodies-men-brushed-pangohead-4?variant=41874717606041&utm_source=facebook&utm_medium=ig Instagram_Feed&utm_campaign=DPA_Retargeting&utm_content=Winter_Products_Insta_Engagers&ad name=b2g1_frame1_abhishek_intro_card – Copy&fbc_id=23852153490240508&h_ad_id=23852156277220508&fbclid=PAAaY-XPQxW9zskrACCfDZbg70RclGGwszRFg2LI6hSp_Kk8mVSDXGBmbVXxM",
+      "landing_site_ref": null,
+      "location_id": null,
+      "merchant_of_record_app_id": null,
+      "name": "227980",
+      "note": null,
+      "note_attributes": [],
+      "number": 26980,
+      "order_number": 27980,
+      "order_status_url": "https://www.lovepangolin.com/40902099097/orders/e6217ca34398a78d19ac9df2401af555/authenticate?key=1d4b7b6fadf502acb41333f2b12dc873",
+      "original_total_duties_set": null,
+      "payment_gateway_names": [
+        "Razorpay Secure"
+      ],
+      "phone": null,
+      "presentment_currency": "INR",
+      "processed_at": "2022-11-16T07:59:04+05:30",
+      "processing_method": "offsite",
+      "reference": "138fcf1c3624bafb1767029f23c2c03f",
+      "referring_site": "http://instagram.com/",
+      "source_identifier": "138fcf1c3624bafb1767029f23c2c03f",
+      "source_name": "web",
+      "source_url": null,
+      "subtotal_price": "2199.00",
+      "subtotal_price_set": {
+        "shop_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        }
+      },
+      "tags": "",
+      "tax_lines": [],
+      "taxes_included": true,
+      "test": false,
+      "token": "e6217ca34398a78d19ac9df2401af555",
+      "total_discounts": "0.00",
+      "total_discounts_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_line_items_price": "2199.00",
+      "total_line_items_price_set": {
+        "shop_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_outstanding": "0.00",
+      "total_price": "2199.00",
+      "total_price_set": {
+        "shop_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "2199.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_shipping_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_tax": "0.00",
+      "total_tax_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "INR"
+        }
+      },
+      "total_tip_received": "0.00",
+      "total_weight": 30,
+      "updated_at": "2022-11-18T17:31:12+05:30",
+      "user_id": null,
+      "billing_address": {
+        "first_name": "Karan",
+        "address1": "301 Gh 69",
+        "phone": "95696 97547",
+        "city": "Panchkula",
+        "zip": "134116",
+        "province": "Haryana",
+        "country": "India",
+        "last_name": "Sidhu",
+        "address2": "Sector 20",
+        "company": null,
+        "latitude": null,
+        "longitude": null,
+        "name": "Karan Sidhu",
+        "country_code": "IN",
+        "province_code": "HR"
+      },
+      "customer": {
+        "id": 6325083799705,
+        "email": "karan.sidhu90.ks@gmail.com",
+        "accepts_marketing": true,
+        "created_at": "2022-11-16T07:59:06+05:30",
+        "updated_at": "2022-11-16T07:59:07+05:30",
+        "first_name": "Karan",
+        "last_name": "Sidhu",
+        "state": "disabled",
+        "note": null,
+        "verified_email": true,
+        "multipass_identifier": null,
+        "tax_exempt": false,
+        "tags": "",
+        "currency": "INR",
+        "phone": null,
+        "accepts_marketing_updated_at": "2022-11-16T07:59:07+05:30",
+        "marketing_opt_in_level": "single_opt_in",
+        "tax_exemptions": [],
+        "email_marketing_consent": {
+          "state": "subscribed",
+          "opt_in_level": "single_opt_in",
+          "consent_updated_at": "2022-11-16T07:59:07+05:30"
+        },
+        "sms_marketing_consent": null,
+        "admin_graphql_api_id": "gid://shopify/Customer/6325083799705",
+        "default_address": {
+          "id": 7788779438233,
+          "customer_id": 6325083799705,
+          "first_name": "Karan",
+          "last_name": "Sidhu",
+          "company": null,
+          "address1": "301 Gh 69",
+          "address2": "Sector 20",
+          "city": "Panchkula",
+          "province": "Haryana",
+          "country": "India",
+          "zip": "134116",
+          "phone": "95696 97547",
+          "name": "Karan Sidhu",
+          "province_code": "HR",
+          "country_code": "IN",
+          "country_name": "India",
+          "default": true
+        }
+      },
+      "discount_applications": [],
+      "fulfillments": [
+        {
+          "id": 4181580382361,
+          "admin_graphql_api_id": "gid://shopify/Fulfillment/4181580382361",
+          "created_at": "2022-11-18T17:31:12+05:30",
+          "location_id": 57359728793,
+          "name": "227980.1",
+          "order_id": 4715161190553,
+          "origin_address": {},
+          "receipt": {},
+          "service": "manual",
+          "shipment_status": null,
+          "status": "success",
+          "tracking_company": "Blue Dart Surface",
+          "tracking_number": "76612141933",
+          "tracking_numbers": [
+            "76612141933"
+          ],
+          "tracking_url": "https://lovepangolin.shiprocket.co/tracking/76612141933",
+          "tracking_urls": [
+            "https://lovepangolin.shiprocket.co/tracking/76612141933"
+          ],
+          "updated_at": "2022-11-18T17:31:12+05:30",
+          "line_items": [
+            {
+              "id": 11959290527897,
+              "admin_graphql_api_id": "gid://shopify/LineItem/11959290527897",
+              "fulfillable_quantity": 0,
+              "fulfillment_service": "manual",
+              "fulfillment_status": "fulfilled",
+              "gift_card": false,
+              "grams": 0,
+              "name": "Napoli Hoodies - XL / Kingfisher Blue",
+              "price": "2049.00",
+              "price_set": {
+                "shop_money": {
+                  "amount": "2049.00",
+                  "currency_code": "INR"
+                },
+                "presentment_money": {
+                  "amount": "2049.00",
+                  "currency_code": "INR"
+                }
+              },
+              "product_exists": true,
+              "product_id": 7220158103705,
+              "properties": [
+                {
+                  "name": "goldPlatting",
+                  "value": false
+                },
+                {
+                  "name": "isGarment",
+                  "value": true
+                },
+                {
+                  "name": "Monogram",
+                  "value": "Kvs"
+                },
+                {
+                  "name": "Placement",
+                  "value": "bottom"
+                }
+              ],
+              "quantity": 1,
+              "requires_shipping": true,
+              "sku": "HD-NP-Teal-BLTR-NCT-NPP-NLN-ML-XL-101",
+              "taxable": false,
+              "title": "Napoli Hoodies",
+              "total_discount": "0.00",
+              "total_discount_set": {
+                "shop_money": {
+                  "amount": "0.00",
+                  "currency_code": "INR"
+                },
+                "presentment_money": {
+                  "amount": "0.00",
+                  "currency_code": "INR"
+                }
+              },
+              "variant_id": 41600053084313,
+              "variant_inventory_management": "shopify",
+              "variant_title": "XL / Kingfisher Blue",
+              "vendor": "Pangolin",
+              "tax_lines": [],
+              "duties": [],
+              "discount_allocations": []
+            }
+          ]
+        }
+      ],
+      "line_items": [
+        {
+          "id": 11959290527897,
+          "admin_graphql_api_id": "gid://shopify/LineItem/11959290527897",
+          "fulfillable_quantity": 0,
+          "fulfillment_service": "manual",
+          "fulfillment_status": "fulfilled",
+          "gift_card": false,
+          "grams": 0,
+          "name": "Napoli Hoodies - XL / Kingfisher Blue",
+          "price": "2049.00",
+          "price_set": {
+            "shop_money": {
+              "amount": "2049.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "2049.00",
+              "currency_code": "INR"
+            }
+          },
+          "product_exists": true,
+          "product_id": 7220158103705,
+          "properties": [
+            {
+              "name": "goldPlatting",
+              "value": false
+            },
+            {
+              "name": "isGarment",
+              "value": true
+            },
+            {
+              "name": "Monogram",
+              "value": "Kvs"
+            },
+            {
+              "name": "Placement",
+              "value": "bottom"
+            }
+          ],
+          "quantity": 1,
+          "requires_shipping": true,
+          "sku": "HD-NP-Teal-BLTR-NCT-NPP-NLN-ML-XL-101",
+          "taxable": false,
+          "title": "Napoli Hoodies",
+          "total_discount": "0.00",
+          "total_discount_set": {
+            "shop_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            }
+          },
+          "variant_id": 41600053084313,
+          "variant_inventory_management": "shopify",
+          "variant_title": "XL / Kingfisher Blue",
+          "vendor": "Pangolin",
+          "tax_lines": [],
+          "duties": [],
+          "discount_allocations": []
+        },
+        {
+          "id": 11959290560665,
+          "admin_graphql_api_id": "gid://shopify/LineItem/11959290560665",
+          "fulfillable_quantity": 1,
+          "fulfillment_service": "manual",
+          "fulfillment_status": null,
+          "gift_card": false,
+          "grams": 30,
+          "name": "Custom Initials - Custom Intials",
+          "price": "150.00",
+          "price_set": {
+            "shop_money": {
+              "amount": "150.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "150.00",
+              "currency_code": "INR"
+            }
+          },
+          "product_exists": true,
+          "product_id": 7220162691225,
+          "properties": [
+            {
+              "name": "RelatedId",
+              "value": 41600053084313
+            }
+          ],
+          "quantity": 1,
+          "requires_shipping": false,
+          "sku": "PG-CI-150",
+          "taxable": false,
+          "title": "Custom Initials",
+          "total_discount": "0.00",
+          "total_discount_set": {
+            "shop_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            }
+          },
+          "variant_id": 41600056524953,
+          "variant_inventory_management": "shopify",
+          "variant_title": "Custom Intials",
+          "vendor": "Pangolin",
+          "tax_lines": [],
+          "duties": [],
+          "discount_allocations": []
+        }
+      ],
+      "payment_terms": null,
+      "refunds": [],
+      "shipping_address": {
+        "first_name": "Karan",
+        "address1": "301 Gh 69",
+        "phone": "95696 97547",
+        "city": "Panchkula",
+        "zip": "134116",
+        "province": "Haryana",
+        "country": "India",
+        "last_name": "Sidhu",
+        "address2": "Sector 20",
+        "company": null,
+        "latitude": null,
+        "longitude": null,
+        "name": "Karan Sidhu",
+        "country_code": "IN",
+        "province_code": "HR"
+      },
+      "shipping_lines": [
+        {
+          "id": 3911567245465,
+          "carrier_identifier": "650f1a14fa979ec5c74d063e968411d4",
+          "code": "Free Shipping",
+          "delivery_category": null,
+          "discounted_price": "0.00",
+          "discounted_price_set": {
+            "shop_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            }
+          },
+          "phone": null,
+          "price": "0.00",
+          "price_set": {
+            "shop_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            },
+            "presentment_money": {
+              "amount": "0.00",
+              "currency_code": "INR"
+            }
+          },
+          "requested_fulfillment_service_id": null,
+          "source": "shopify",
+          "title": "Free Shipping",
+          "tax_lines": [],
+          "discount_allocations": []
+        }
+      ]
+    },
+
+
