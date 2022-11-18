@@ -34,8 +34,8 @@ const prettyDate = $date => {
 };
 
 
-// app.get('/check', async (req, res) => {
-    setInterval(async()=>{
+app.get('/', async (req, res) => {
+  
 
    
 
@@ -202,9 +202,9 @@ const prettyDate = $date => {
 
 
 
-    // return res.send(status)
-    return status
-},30000)
+    return res.send(status)
+    // return status
+})
 
 
 
