@@ -18,7 +18,7 @@ dayjs.extend(customParseFormat);
 
 
 var lastUpdated = {
-    min: dayjs().subtract(35, 'minute').toISOString(),
+    min: dayjs().subtract(65, 'minute').toISOString(),
     max: dayjs().toISOString()
 }
 
