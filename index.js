@@ -3,10 +3,9 @@ const express = require("express")
 let axios = require("axios")
 const app = express();
 const { GoogleSpreadsheet } = require('google-spreadsheet');
-const creds = require('./secret/extreme-storm-369107-c2750b32474a.json')
+const creds = require('./secret/love-pengolin-6d1b783b5591.json')
 const _ = require('lodash');
 const dayjs = require('dayjs');
-const cron = require('node-cron');
 const getSymbolFromCurrency = require('currency-symbol-map');
 
 // load plugins
@@ -38,11 +37,6 @@ const prettyDate = $date => {
 
 app.get('/', async (req, res) => {
 
-    // cron.schedule('*/30 * * * *', async() => {
-    //     console.log(`running a task every 30 minute `);
-     
-
-
     let tsw = req.headers.tsw
     console.log(tsw, process.env.SECRET_VALUE)
 
@@ -54,8 +48,6 @@ app.get('/', async (req, res) => {
 
         let result = await axios(options)
         let data = result.data.orders
-
-        
         let jsonToCsv = []
 
         let jsonData = () => {
@@ -69,7 +61,8 @@ app.get('/', async (req, res) => {
                             "Customer Name": item.customer.default_address.name,
                             "Customer Email": item.customer.email,
                             "Currency": item.customer.currency,
-                            "Price": getSymbolFromCurrency(item.customer.currency) +""+ item.line_items[i].price  ,
+                            "Price":  item.line_items[i].price  ,
+                            "Total Discount" : item.line_items[i].total_discount ? item.line_items[i].total_discount : 0 ,
                             "Quantity": item.line_items[i].quantity,
                             "Item Name": item.line_items[i].title,
                             "Item SKU": item.line_items[i].sku,
@@ -79,8 +72,7 @@ app.get('/', async (req, res) => {
                             "Cancelled": (item.cancelled_at == null) ? "No" : "Yes",
                             "City": item.customer.default_address.city,
                             "Fullfiment Date": (item.fulfillments.length == 0) ? null : prettyDate(item.fulfillments[0].created_at),
-                            "Delivery Vendor": (item.fulfillments.length == 0) ? null : item.fulfillments[0].tracking_company,
-                            "Delivery Type": item.shipping_lines[0].title ?  item.shipping_lines[0].title : null  ,
+                            "Delivery Type": (item.fulfillments.length == 0) ? null : item.fulfillments[0].tracking_company,
                             "Delivered Date": (item.fulfillments.length == 0) ? null : (item.fulfillments[0].shipment_status == "delivered")? prettyDate(item.fulfillments[0].updated_at) : null,
                             "Fullfiment QTY": item.line_items[i].fulfillable_quantity,
                             "Remarks (Reason for cancellation/ delay)  ": item.cancel_reason,
@@ -113,6 +105,7 @@ app.get('/', async (req, res) => {
             "Customer Email",
             "Currency",
             "Price",
+            "Total Discount",
             "Quantity",
             "Item Name",
             "Item SKU",
@@ -122,7 +115,6 @@ app.get('/', async (req, res) => {
             "Cancelled",
             "City",
             "Fullfiment Date",
-            "Delivery Vendor",
             "Delivery Type",
             "Delivered Date",
             "Fullfiment QTY",
@@ -219,17 +211,14 @@ app.get('/', async (req, res) => {
 
 
 
-        return res.status(200).send(status)
-        
-       
+        return res.send(status)
 
     } else {
 
         return res.send({ status: "secret value not match" })
     }
     // return status
-});
-// })
+})
 
 
 
