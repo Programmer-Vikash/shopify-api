@@ -37,13 +37,13 @@ const prettyDate = $date => {
 
 app.get('/', async (req, res) => {
 
-
-    let tsw = req.headers.tsw
+// let tsw = req.query.tsw
+   let tsw = req.headers.tsw
   
 
     if (tsw == process.env.SECRET_VALUE) {
 
-    //    let wrapperFunction = async () =>{
+        let wrapperFunction = async () =>{
 
      
 
@@ -204,23 +204,23 @@ app.get('/', async (req, res) => {
         console.log(newData)
         await sheet.addRows(newData)
 
-  //  }
+    
 
-   // wrapperFunction()
-
-        let status = {
-            success: 'ok',
-            data: {
-              foundRows: alreadyExists,
-               addedRows: newData,
+    
+    let status = {
+        success: 'ok',
+        data: {
+                foundRows: alreadyExists,
+                addedRows: newData,
                 removedRows: removedRows
-
+            
             }
         }
-
-
-
+        
         return res.send(status)
+    }
+        
+        wrapperFunction()
 
     } else {
 
