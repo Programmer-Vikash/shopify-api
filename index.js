@@ -37,10 +37,15 @@ const prettyDate = $date => {
 
 app.get('/', async (req, res) => {
 
+
     let tsw = req.headers.tsw
-    console.log(tsw, process.env.SECRET_VALUE)
+  
 
     if (tsw == process.env.SECRET_VALUE) {
+
+        let wrapperFunction = async () =>{
+
+     
 
         let removedRows = [];
 
@@ -199,16 +204,18 @@ app.get('/', async (req, res) => {
         console.log(newData)
         await sheet.addRows(newData)
 
+    }
 
+    wrapperFunction()
 
         let status = {
             success: 'ok',
-            data: {
-                foundRows: alreadyExists,
-                addedRows: newData,
-                removedRows: removedRows
+            // data: {
+            //     foundRows: alreadyExists,
+            //     addedRows: newData,
+            //     removedRows: removedRows
 
-            }
+            // }
         }
 
 
