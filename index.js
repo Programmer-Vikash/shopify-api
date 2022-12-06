@@ -43,7 +43,7 @@ app.get('/', async (req, res) => {
 
     if (tsw == process.env.SECRET_VALUE) {
 
-        let wrapperFunction = async () =>{
+    //    let wrapperFunction = async () =>{
 
      
 
@@ -204,18 +204,18 @@ app.get('/', async (req, res) => {
         console.log(newData)
         await sheet.addRows(newData)
 
-    }
+  //  }
 
-    wrapperFunction()
+   // wrapperFunction()
 
         let status = {
             success: 'ok',
-            // data: {
-            //     foundRows: alreadyExists,
-            //     addedRows: newData,
-            //     removedRows: removedRows
+            data: {
+              foundRows: alreadyExists,
+               addedRows: newData,
+                removedRows: removedRows
 
-            // }
+            }
         }
 
 
