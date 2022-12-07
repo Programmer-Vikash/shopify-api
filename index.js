@@ -43,7 +43,7 @@ app.get('/', async (req, res) => {
 
     if (tsw == process.env.SECRET_VALUE) {
 
-        let wrapperFunction = async () =>{
+       // let wrapperFunction = async () =>{
 
      
 
@@ -218,9 +218,9 @@ app.get('/', async (req, res) => {
         }
         
         return res.send(status)
-    }
+  //  }
         
-        wrapperFunction()
+      //  wrapperFunction()
 
     } else {
 
