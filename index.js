@@ -37,15 +37,15 @@ const prettyDate = $date => {
 
 app.get('/', async (req, res) => {
 
-// let tsw = req.query.tsw
-   let tsw = req.headers.tsw
-  
+    // let tsw = req.query.tsw
+    // let tsw = req.headers.tsw
 
-    if (tsw == process.env.SECRET_VALUE) {
 
-       // let wrapperFunction = async () =>{
+    //  if (tsw == process.env.SECRET_VALUE) {
 
-     
+    //let wrapperFunction = async () => {
+
+
 
         let removedRows = [];
 
@@ -66,20 +66,20 @@ app.get('/', async (req, res) => {
                             "Customer Name": item.customer.default_address.name,
                             "Customer Email": item.customer.email,
                             "Currency": item.customer.currency,
-                            "Price":  item.line_items[i].price  ,
-                            "Total Discount" : item.line_items[i].total_discount ? item.line_items[i].total_discount : 0 ,
+                            "Price": item.line_items[i].price,
+                            "Total Discount": item.line_items[i].total_discount ? item.line_items[i].total_discount : 0,
                             "Quantity": item.line_items[i].quantity,
                             "Item Name": item.line_items[i].title,
                             "Item SKU": item.line_items[i].sku,
                             "Variant Type": item.line_items[i].variant_title,
                             "Fulfillment Status": item.line_items[i].fulfillment_status ? item.fulfillment_status : 'Unfulfilled',
-                            "Payment Status": (item.financial_status == "paid")? "Paid" : "Pending",
+                            "Payment Status": (item.financial_status == "paid") ? "Paid" : "Pending",
                             "Cancelled": (item.cancelled_at == null) ? "No" : "Yes",
                             "City": item.customer.default_address.city,
                             "Fullfiment Date": (item.fulfillments.length == 0) ? null : prettyDate(item.fulfillments[0].created_at),
                             "Delivery Vendor": (item.fulfillments.length == 0) ? null : item.fulfillments[0].tracking_company,
-                            "Delivery Type": item.shipping_lines[0].title ?  item.shipping_lines[0].title : null  ,
-                            "Delivered Date": (item.fulfillments.length == 0) ? null : (item.fulfillments[0].shipment_status == "delivered")? prettyDate(item.fulfillments[0].updated_at) : null,
+                            "Delivery Type": item.shipping_lines[0].title ? item.shipping_lines[0].title : null,
+                            "Delivered Date": (item.fulfillments.length == 0) ? null : (item.fulfillments[0].shipment_status == "delivered") ? prettyDate(item.fulfillments[0].updated_at) : null,
                             "Fullfiment QTY": item.line_items[i].fulfillable_quantity,
                             "Remarks (Reason for cancellation/ delay)  ": item.cancel_reason,
                             "Transaction Type": item.gateway,
@@ -204,30 +204,30 @@ app.get('/', async (req, res) => {
         console.log(newData)
         await sheet.addRows(newData)
 
-    
 
-    
-    let status = {
-        success: 'ok',
-        data: {
+
+
+        let status = {
+            success: 'ok',
+            data: {
                 foundRows: alreadyExists,
                 addedRows: newData,
                 removedRows: removedRows
-            
+
             }
         }
-        
+
         return res.send(status)
-  //  }
-        
-      //  wrapperFunction()
+        // }
 
-    } else {
+        //    wrapperFunction()
 
-        return res.send({ status: "secret value not match" })
-    }
-    // return status
-})
+        //  } else {
+
+        //  return res.send({ status: "secret value not match" })
+        // }
+        // return status
+    })
 
 
 
